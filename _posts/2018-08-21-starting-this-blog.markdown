@@ -4,10 +4,15 @@ title:  "Starting a Jekyll Blog on GitHub Pages"
 date:   2018-08-21 14:00:31 +0100
 categories: jekyll update
 ---
-After only a couple of hours this is actually up and running. The main hurdle for setting up GitHub pages is gathering all the little bits and pieces together. In that sense it is more a quick succession of tiny hurdles than any one large creative leap.
+***
+<br />
+
+<p><span class="firstcharacter">A</span>fter only a couple of hours this is actually up and running. The main hurdle for setting up GitHub pages is gathering all the little bits and pieces together. In that sense it is more a quick succession of tiny hurdles than any one large creative leap.</p>
 
 To get started on this you are going to need to do a few things. Some of these are dependant on your setup so I have listed the sub-steps that also need to be taken.
 
+***
+<br />
 Pages Repository = `USERNAME.guthub.io` repository
 
 
@@ -35,6 +40,8 @@ Pages Repository = `USERNAME.guthub.io` repository
 
 With the install of all the command line tools and updating packages, it could take a while to get this all finished.
 
+***
+<br />
 ### Helpful References
 
 * [Jekyll Quick Start Guide](https://jekyllrb.com/docs/quickstart/)
