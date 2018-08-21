@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Staring a Jekyll Blog on GitHub Pages"
+title:  "Starting a Jekyll Blog on GitHub Pages"
 date:   2018-08-21 11:00:31 +0100
 categories: jekyll update
 ---
@@ -32,11 +32,10 @@ Pages Repository = `USERNAME.guthub.io` repository
     * When altering the `CNAME` record, change the following
         * host: `www` (or something like `blog`)
         * points to: `github_username.github.io`
-    
+
 With the install of all the command line tools and updating packages, it could take a while to get this all finished.
 
 ### Helpful References
 
 * [Jekyll Quick Start Guide](https://jekyllrb.com/docs/quickstart/)
 * [Kramdown Reference](https://kramdown.gettalong.org/quickref.html)
-
