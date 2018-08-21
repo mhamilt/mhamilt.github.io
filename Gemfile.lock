@@ -36,6 +36,9 @@ GEM
     jekyll-theme-midnight (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
+    jekyll-theme-time-machine (0.1.1)
+      jekyll (~> 3.5)
+      jekyll-seo-tag (~> 2.0)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -45,6 +48,10 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
+    minima (2.5.0)
+      jekyll (~> 3.5)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
@@ -67,6 +74,8 @@ DEPENDENCIES
   jekyll (~> 3.8.3)
   jekyll-feed (~> 0.6)
   jekyll-theme-midnight
+  jekyll-theme-time-machine
+  minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH
