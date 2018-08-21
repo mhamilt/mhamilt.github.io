@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Starting a Jekyll Blog on GitHub Pages"
-date:   2018-08-21 11:00:31 +0100
+date:   2018-08-21 14:00:31 +0100
 categories: jekyll update
 ---
 After only a couple of hours this is actually up and running. The main hurdle for setting up GitHub pages is gathering all the little bits and pieces together. In that sense it is more a quick succession of tiny hurdles than any one large creative leap.
