@@ -9,11 +9,13 @@ categories: jekyll update
 
 <p><span class="firstcharacter">A</span>fter only a couple of hours this is actually up and running. The main hurdle for setting up GitHub pages is gathering all the little bits and pieces together. In that sense it is more a quick succession of tiny hurdles than any one large creative leap.</p>
 
-To get started on this you are going to need to do a few things. Some of these are dependant on your setup so I have listed the sub-steps that also need to be taken.
+To get started on this you are going to need to do a few things. Some of these are dependant on your setup so I have listed the sub-steps that also need to be taken. This is all written from the perspective of macOS.
 
 ***
 <br />
-Pages Repository = `USERNAME.guthub.io` repository
+### Workflow
+
+Pages Repository = `USERNAME.github.io` repository
 
 
 * Setup GitHub Pages
@@ -29,7 +31,8 @@ Pages Repository = `USERNAME.guthub.io` repository
         * update RubyGem: `gem install rubygems-update`
     * change directory to the location of Pages Repository
     * type `jekyll new .`
-* _If you want to use a custom domain_
+
+* *_If you want to use a custom domain_*
     * Register your domain name
     * In Pages Repository: [go to settings](https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/) and change custom domain to `www.yourdomain`
         * yourdomain is the domain name you have registered `example.com`, `example.io`,`example.co.uk`
@@ -39,6 +42,32 @@ Pages Repository = `USERNAME.guthub.io` repository
         * points to: `github_username.github.io`
 
 With the install of all the command line tools and updating packages, it could take a while to get this all finished.
+
+Run server and test site with `bundle exec jekyll serve`
+
+***
+
+### Shell Script
+
+{% highlight bash %}
+##########################################
+# EDIT THESE
+USERNAME="YOUR_USERNAME"
+REPOSITORY="$USERNAME.github.io"
+GITHUB_FOLDER="~/Documents/GitHub/"
+REPOSITORY_PATH="$GITHUB_FOLDER$REPOSITORY"
+##########################################
+xcode-select --install
+git clone "https://github.com/$USERNAME/$REPOSITORY"
+\curl -sSL https://get.rvm.io | bash -s stable
+rvm install ruby-2.4
+gem install rubygems-update
+gem install jekyll bundler
+cd REPOSITORY_PATH="$GITHUB_FOLDER$REPOSITORY"
+jekyll new .
+##########################################
+# EOF
+{% endhighlight %}
 
 ***
 <br />
