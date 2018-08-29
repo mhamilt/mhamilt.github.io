@@ -6,8 +6,8 @@ categories: raspberry pi, eduroam
 ---
 ***
 <br />
+<p><span class="firstcharacter">C</span>onnecting to eduroam within Raspbian took a lot more effort than I initially expected. Here are all the changes required, bundled into a script for those, like me, who have shaky hands and a poor track record with typos. For the University of Edinburgh I have found the following to work consistently. Of course, your mileage may vary.</p><br>
 
-<p><span class="firstcharacter">C</span>onnecting to eduroam with in Raspbian took a lot more effort than I initially expected. Here are all the changes required, bundled into a script for those, like me, who have shaky hands and a poor track record with typos. For the University of Edinburgh I have found the following to work consistently. Of course, your mileage may vary.</p>
 ***
 ### Notes
 
@@ -26,6 +26,7 @@ then, change the overwrite operator `>` to the append operator `>>`
 `' $USERNAME $PASSWORD >> /etc/wpa_supplicant/wpa_supplicant.conf`
 
 Thanks to elektronik-kompendium.de whose article was the one that finally explained how to do this. It is linked below, though you may need to polish up your German
+<br><br>
 
 ***
 ### Configure Eduroam Script
