@@ -59,11 +59,11 @@ REPOSITORY_PATH="$GITHUB_FOLDER$REPOSITORY"
 ##########################################
 xcode-select --install
 git clone "https://github.com/$USERNAME/$REPOSITORY"
-\curl -sSL https://get.rvm.io | bash -s stable
+curl -sSL https://get.rvm.io | bash -s stable
 rvm install ruby-2.4
 gem install rubygems-update
 gem install jekyll bundler
-cd REPOSITORY_PATH="$GITHUB_FOLDER$REPOSITORY"
+cd REPOSITORY_PATH
 jekyll new .
 ##########################################
 # EOF
