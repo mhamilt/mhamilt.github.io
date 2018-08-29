@@ -2,7 +2,8 @@
 layout: post
 title:  "Starting a Jekyll Blog on GitHub Pages"
 date:   2018-08-21 14:00:31 +0100
-categories: jekyll update
+categories: blog
+tags: github-pages jekyll
 ---
 ***
 <br />

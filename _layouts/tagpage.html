@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="post">
+<h1>Tag: {{ page.tag }}</h1>
+<ul>
+{% for post in site.tags[page.tag] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    {{ post.description }}
+  </li>
+{% endfor %}
+</ul>
+</div>
+<br>
+<hr>
+<br>
+<a href="http://longqian.me/2017/02/09/github-jekyll-tag/">how did you add tags?</a>

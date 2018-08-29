@@ -2,7 +2,8 @@
 layout: post
 title:  "Connecting Raspberry Pi to Eduroam"
 date:   2018-08-29 10:32:00 +0100
-categories: raspberry_pi
+categories: blog
+tags: raspberry-pi
 ---
 ***
 <br />
