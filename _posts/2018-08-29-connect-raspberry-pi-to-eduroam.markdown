@@ -69,4 +69,4 @@ network={
 <br />
 ### References
 
-* [Raspberry Pi: Mit dem eduroam-WLAN verbinden](http://blog.emmatosch.com/2016/03/09/using-custom-javascript-in-jekyll-blogs.html)
+* [Raspberry Pi: Mit dem eduroam-WLAN verbinden](https://www.elektronik-kompendium.de/sites/raspberry-pi/2205191.htm)
