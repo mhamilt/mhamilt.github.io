@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "a Simple Applescript Voice Recognition Program"
-date:   2018-08-29 10:32:00 +0100
+date:   2018-08-30 13:18:00 +0100
 categories: blog
 tags: applescript
 ---
