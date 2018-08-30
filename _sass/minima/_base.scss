@@ -161,7 +161,7 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid $code-background-color;
-  border-radius: 3px;
+  border-radius: 0px;
   background-color: $code-background-color;
 }
 
