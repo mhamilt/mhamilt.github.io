@@ -33,18 +33,17 @@ Thanks to elektronik-kompendium.de whose article was the one that finally explai
 ### Configure Eduroam Script
 
 {% highlight bash %}
-#--------------------------------------------------------------
-# Edit These
+#----------------------------------------------------------
 USERNAME='username@university_domain'
 PASSWORD='your_password'
-#--------------------------------------------------------------
-sudo printf '
+#----------------------------------------------------------
+sudo sh -c "printf '
 allow-hotplug wlan0
 iface wlan0 inet manual
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-' >> /etc/network/interfaces
+' >> /etc/network/interfaces"
 
-sudo printf '
+sudo sh -c "printf '
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=GB
@@ -59,8 +58,8 @@ network={
    phase1="peaplabel=0"
    phase2="auth=MSCHAPV2"
 }
-' $USERNAME $PASSWORD > /etc/wpa_supplicant/wpa_supplicant.conf
-#--------------------------------------------------------------
+' $USERNAME $PASSWORD > /etc/wpa_supplicant/wpa_supplicant.conf"
+#----------------------------------------------------------
 #EOF
 
 {% endhighlight %}
