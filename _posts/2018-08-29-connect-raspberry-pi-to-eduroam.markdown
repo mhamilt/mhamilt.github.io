@@ -35,8 +35,8 @@ Thanks to elektronik-kompendium.de whose article was the one that finally explai
 {% highlight bash %}
 #!/bin/bash
 #----------------------------------------------------------
-USERNAME='username@university_domain'
-PASSWORD='your_password'
+read -p 'Username: (.e.g. username@university_domain)' USERNAME
+read -sp 'Password: ' PASSWORD
 #----------------------------------------------------------
 sudo sh -c "printf '
 allow-hotplug wlan0
@@ -45,6 +45,7 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ' >> /etc/network/interfaces"
 
 sudo sh -c "printf 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ap_scan=1
 update_config=1
 country=GB
 
@@ -61,6 +62,7 @@ network={
 ' $USERNAME $PASSWORD > /etc/wpa_supplicant/wpa_supplicant.conf"
 #----------------------------------------------------------
 #EOF
+
 {% endhighlight %}
 
 ***
