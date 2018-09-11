@@ -23,6 +23,15 @@ github_username:  mhamilt
 
 # Build settings
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: bash
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
 theme: minima
 #plugins:
 #  - jekyll-feed
@@ -30,7 +39,6 @@ theme: minima
 header_pages:
   - about.md
   - archive.md
-
 
 # ~/.rvm/gems/ruby-2.4.2/gems/minima-2.5.0
 # Exclude from processing.
