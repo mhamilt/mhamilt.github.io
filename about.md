@@ -4,20 +4,6 @@ title: About
 permalink: /about/
 ---
 <h1 class="type-text"></h1>
-
-<script>
-var cursors = ["$", "£", "&", '%', '@', '€', '±', '§', '~', '*'];
-$( function() {
-  $( '.type-text' ).teletype( {
-    text: [ 'josh lyell loves bubbles' ],
-    typeDelay: 0,
-    backDelay: 20,
-
-    callbackType: function( letter, current, teletype )
-    {
-      teletype.setCursor( cursors[~~(Math.random() * 10)] );
-    }
-
-  } );
-} );
-</script>
+<script src="/js/about_type_script.js"></script>
+<script src="/js/sketch.js"></script>
+<div align="center" id="sketch-holder" > </div>
