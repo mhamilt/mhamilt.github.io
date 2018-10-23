@@ -3,7 +3,5 @@ layout: page
 title: About
 permalink: /about/
 ---
-<h1 class="type-text"></h1>
-<script src="/js/about_type_script.js"></script>
-<script src="/js/sketch.js"></script>
-<div align="center" id="sketch-holder" > </div>
+
+<img align="left" src="/images/me.jpg" height="25%" width="25%">I am a second rate musician and someone who programs. I am currently the Digital Development technician for Edinburgh College of art. I help staff and students out with programming, a little electronics and generally getting their heads round how to do things. Anyone can program and all programming is just workflow. I hope to demonstrate that in this blog.
