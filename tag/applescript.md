@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: Raspberry Pi"
+title: "Tag: Applescript"
 tag: applescript
 ---
