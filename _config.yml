@@ -16,7 +16,7 @@
 title: mhamilt.github.io
 email: matt.hamilton@ed.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  An in-joke and a cheap domain do not make something a good idea
+  Everything is workflow
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mhamilt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mhamilt
