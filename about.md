@@ -4,4 +4,5 @@ title: About
 permalink: /about/
 ---
 
-<img align="left" src="/images/me.jpg" height="25%" width="25%">I am a second rate musician and someone who programs. I am currently the Digital Development technician for Edinburgh College of art. I help staff and students out with programming, a little electronics and generally getting their heads round how to do things. Anyone can program and all programming is just workflow. I hope to demonstrate that in this blog.
+<img class="self-portrait" src="/images/me.jpg">
+I am a second rate musician and someone who programs. I am currently the Digital Development technician for Edinburgh College of art. I help staff and students out with programming, a little electronics and generally getting their heads round how to do things. Anyone can program and all programming is just workflow. I hope to demonstrate that in this blog.
