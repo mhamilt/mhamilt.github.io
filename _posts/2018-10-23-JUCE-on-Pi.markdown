@@ -40,7 +40,7 @@ libcurl4-openssl-dev \
 After that, make the Projucer app:
 {% highlight bash %}
  cd ~/JUCE/extras/Projucer/Builds/LinuxMakefile
- make CXX=clang++ -j4
+ make
 {% endhighlight %}
 
 Alternatively, you could also use `make CXX=clang++ -j4`. You should now be able to start Projucer to create your first JUCE project. Others have had trouble building because of the architecture [\[1\]](#helpful-references) so it may be worth altering should you have a similar issue.
@@ -64,8 +64,7 @@ Check out the git tutorial by typing `git help tutorial` in terminal for more he
 ***
 
 #### Installing MATE
-If you like, you can do all of the following on Ubuntu MATE. Mate will not work on a Raspberry pi 3 B+ at time of writing. Benefits
-MATE recommend using `ddrescue` instead of vanilla `dd` [\[4\]](#helpful-references). First off, in terminal `brew install ddrescue` ([make sure you have homebrew installed first](https://brew.sh)). Then simply call `sudo ddrescue -v --force $IMAGE_PATH $DISK_PATH` in terminal, where `$IMAGE_PATH` is the path to the MATE image. If the image is in `.xz` compressed format then simply `brew install xz` and `xz -d file-to-extract.xz`.
+If you like, you could do all that has been covered on Ubuntu MATE. Note: MATE will not work on a Raspberry pi 3 B+ at time of writing. When installing MATE it is recommend that you use `ddrescue` instead of vanilla `dd` [\[4\]](#helpful-references). In terminal `brew install ddrescue` ([make sure you have homebrew installed first](https://brew.sh)). Then simply call `sudo ddrescue -v --force $IMAGE_PATH $DISK_PATH` in terminal, where `$IMAGE_PATH` is the path to the MATE image. If the image is in `.xz` compressed format then simply `brew install xz` and `xz -d file-to-extract.xz`.
 
 ***
 <br/>
