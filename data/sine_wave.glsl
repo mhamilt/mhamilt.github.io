@@ -12,7 +12,7 @@ uniform vec2 resolution;
 uniform vec2 mouse;
 //==============================================================================
 const vec3 color = vec3(.0, .9, .7);
-const float intensity = 4.1;
+const float intensity = 1.1;
 //==============================================================================
 float band(vec2 pos, float amplitude, float frequency)
 {
