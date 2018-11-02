@@ -99,7 +99,7 @@ var a = function (p)
 
     p.preload = function ()
     {
-        program = p.loadShader('../../data/vert.glsl', '../../data/frag.glsl'); // watch your paths
+        program = p.loadShader('../../data/vert.glsl', '../../data/sine_wave.glsl'); // watch your paths
     };
 
     p.setup = function ()
@@ -118,7 +118,8 @@ var a = function (p)
         p.shader(program);
         p.background(0);
         program.setUniform('resolution', [p.width, p.height]);
-        program.setUniform('time', p.sin(p.millis() / 1000.) * 200);
+        // program.setUniform('time', p.sin(p.millis() / 1000.) * 200);
+        program.setUniform('time', (p.millis() / 1000.));
         p.rect(x, y, p.width, p.height);
     };
 };
