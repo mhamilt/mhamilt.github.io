@@ -31,6 +31,6 @@ void main(void)
 	float spectrum;
 	spectrum += band(pos, .9, 1.);
 
-	gl_FragColor = vec4(color * spectrum, spectrum);
+	gl_FragColor = vec4(color * spectrum, 1.0);
 }
 //==============================================================================
