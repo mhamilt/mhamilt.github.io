@@ -40,6 +40,7 @@ header_pages:
   - about.md
   - archive.md
   - playground.md
+  - time.md
 
 # ~/.rvm/gems/ruby-2.4.2/gems/minima-2.5.0
 # Exclude from processing.

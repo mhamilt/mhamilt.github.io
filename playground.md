@@ -13,9 +13,9 @@ permalink: /playground/
 <h1 class="type-text"></h1>
 <script src="/js/about_type_script.js"></script>
 ### P5.js
-<div class="sketch" align="center" id="sketch1" > </div>
-<div align="center" id="sketch2" > </div>
+<div class="sketch" id="sketch1" > </div>
+<div class="sketch" id="sketch2" > </div>
 ### WebGL in P5
-<div align="center" id="sketch3" > </div>
+<div class="sketch" id="sketch3" > </div>
 ### The BBC Clock
-<div align="center" id="sketch4" > </div>
+<div class="sketch" id="sketch4" > </div>

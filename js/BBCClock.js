@@ -11,7 +11,14 @@ class BBCClock
         this.width = screenWidth;
         this.height = screenHeight;
         //----------------------------------------------------------------------------
-        this.clockDiameter = screenHeight / 2;
+        if (screenWidth < screenHeight)
+        {
+            this.clockDiameter = screenWidth / 2;
+        }
+        else
+        {
+            this.clockDiameter = screenHeight / 2;
+        }
         this.clockRadius = this.clockDiameter / 2;
         this.startHourWidth = this.clockDiameter / 66;
         this.endHourWidth = this.clockDiameter / 16;

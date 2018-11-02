@@ -278,9 +278,10 @@ table {
 /**
  * P5 sketches
  */
+ // canvas { position:fixed; top:0; left:0; z-index:1; } #contenu { position:relative; z-index:2; }
  .sketch
  {
-   max-width: 100%;
+   // max-width: 100%;
    padding-right: 10px;
    padding-bottom: 20px;
    vertical-align: middle;
