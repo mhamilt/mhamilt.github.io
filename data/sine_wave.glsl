@@ -16,7 +16,7 @@ const float intensity = 4.1;
 //==============================================================================
 float band(vec2 pos, float amplitude, float frequency)
 {
-	float wave = ((1.0 - (cos(twoPi * pos.x))) * 0.5) * (amplitude * cos(twoPi * frequency * pos.x + time) / 2.);
+	float wave = ((1.0 - (cos(twoPi * 2.0 * pos.x + time))) * 0.5) * (amplitude * sin(twoPi * frequency * pos.x + time*1.5) / 2.);
 	float colourScaling = 0.001;
 	float minValue = 0.001;
 	float maxValue = 4.0;
