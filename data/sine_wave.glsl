@@ -20,7 +20,7 @@ float band(vec2 pos, float amplitude, float frequency)
 	float colourScaling = 0.001;
 	float minValue = 0.002;
 	float maxValue = 5.0;
-	float wavePosition = clamp(abs(wave - pos.y + .5), 0.0001, 2.) ; // cosine - pixel ycoord (0 < wavePosition < 1)
+	float wavePosition = clamp(abs(wave - pos.y + .5), 0.001, 2.) ; // cosine - pixel ycoord (0 < wavePosition < 1)
 	float light = clamp(amplitude * frequency * colourScaling, minValue, maxValue) / wavePosition; // this worked on zero division. this was a hack
 	return light * intensity;
 }
