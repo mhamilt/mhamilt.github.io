@@ -76,7 +76,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: $text-color;
       }
     }
 
@@ -203,7 +203,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $text-color;
 }
 
 .post-link {

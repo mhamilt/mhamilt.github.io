@@ -21,6 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mhamilt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mhamilt
 
+show_excerpts: true
+
 # Build settings
 markdown: kramdown
 kramdown:
@@ -32,6 +34,10 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: true
+
+minima:
+  date_format: "%b %-d, %Y"
+  
 theme: minima
 #plugins:
 #  - jekyll-feed
