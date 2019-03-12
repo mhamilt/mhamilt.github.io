@@ -69,6 +69,7 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
 .self-portrait{
   display: block;
   float: left;
@@ -79,7 +80,19 @@ img {
   vertical-align: middle;
 }
 
-
+@include media-query($on-palm)
+{
+  .self-portrait{
+    display: block;
+    float: center;
+    width: 75%;
+    max-width: 75%;
+    padding-right: 12.5%;
+    padding-left: 12.5%;
+    padding-bottom: 40px;
+    vertical-align: middle;
+  }
+}
 /**
  * Figures
  */
