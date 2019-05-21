@@ -36,7 +36,7 @@ var t = function (p)
     var speed = 2.5;
     var radius = 50
     var circ;
-
+    
     class myCircle
     {
         constructor()
