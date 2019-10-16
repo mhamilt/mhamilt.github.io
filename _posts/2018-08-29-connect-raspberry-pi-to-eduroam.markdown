@@ -92,7 +92,7 @@ sudo systemctl restart dhcpcd
 If you connect your Raspberry Pi to your phone, you can also curl this script straight from GitHub with:
 
 ```bash
-bash <(curl -s https://github.com/mhamilt/shell-scripts/blob/master/RaspberryPi/configure_eduroam.sh)
+bash <(curl -s https://raw.githubusercontent.com/mhamilt/shell-scripts/master/RaspberryPi/configure_eduroam.sh)
 ```
 
 **Note**
