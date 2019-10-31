@@ -5,12 +5,11 @@ date:   2019-02-07 10:00:00 +0100
 categories: blog
 tags: arduino
 ---
-***
-<br />
+
 <p><span class="firstcharacter">T</span></p>here is more than one way to skin a cat, it's just that some methods are messier than other. So, inspired code from students and developers alike, I wanted to collect together the myriad of weird and wonderful ways that have been found to tackle the simple task of blinking an LED on Arduino. By no means is this comprehensive, however if you are reading this and are infuriated that your favourite method has been left out, get in touch.
 
 ***
-<br>
+
 ## Lets Blink a Light
 
 ```c++
@@ -23,9 +22,9 @@ tags: arduino
 
 void setTimer1(uint8_t blinksPerSecond)
 {
-  cli();        
-  TCCR1A = 0;   
-  TCCR1B = 0;   
+  cli();
+  TCCR1A = 0;
+  TCCR1B = 0;
   TCCR1B |= _BV(WGM12) | _BV(CS12) | _BV(CS10);
   OCR1A = (16e6 / 1024) / blinksPerSecond;
   TIMSK1 = 0;
@@ -55,7 +54,7 @@ void loop()
 
   ledBlink(int a, int b)
 
-  auto blinkLed = [](int a, int b){for(int i=0; i<a; ++i){digitalWrite(13,!digitalRead(13));delay(b);}};  
+  auto blinkLed = [](int a, int b){for(int i=0; i<a; ++i){digitalWrite(13,!digitalRead(13));delay(b);}};
   blinkLed(2,1000);
 
   blink
@@ -95,13 +94,13 @@ ISR(TIMER1_COMPA_vect)
 ```
 
 ***
-<br>
+
 
 ## Explanations
 The above approaches can be split into two groups, C++ solutions and Arduino solutions. C++ solutions are those that are based around code or pre-compiler trickery. Arduino solutions are those that implement specific aspects of the ATMEGA architecture, such as [port manipulation](https://www.arduino.cc/en/Reference/PortManipulation) and [timer interrupts](https://playground.arduino.cc/code/timer1).
 
 ***
-<br>
+
 
 ## C++ Methods
 By C++ methods, what I mean are any way of changing a pin's state on the Arduino that are based around the quirks of the C++ language. So, although `digitalWrite` is an Arduino function, using it in a for-loop, in another function, in a lambda function (& c...), I define that as still being grounded in C++.
@@ -161,7 +160,7 @@ digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
 This is very hacky, but I appreciated the brevity of it. Even though the `LED_BUILTIN` has been set as `OUTPUT`, you can still read it's state. The `!digitalRead(LED_BUILTIN)` basically say, get me the state of the `LED_BUILTIN` pin (`digitalRead(LED_BUILTIN)`) then, return the opposite value by using `!`. This is the same logic for `((digitalRead(LED_BUILTIN)) ?  digitalWrite(LED_BUILTIN, LOW) : digitalWrite(LED_BUILTIN, HIGH));`, except this case uses the C++ [conditional (or ternary) operator](https://www.tutorialspoint.com/cplusplus/cpp_conditional_operator.htm). This basically evealutes the expression in brackets as boolean and then, if the result is `true` the first statement (left of `?`) executes and the second statement (right of `?`) executes if it is `false`.
 
 ***
-<br>
+
 
 ## Arduino Methods
 What I define as 'Arduino Methods' are ways to change the state of a pin that are based around quirks and the framework of interacting with the ATMega. For the most part this is a healthy dose of [Port Manipulation](https://www.arduino.cc/en/Reference/PortManipulation) and usage of the ATMega's in built [timers](https://playground.arduino.cc/code/timer1).
@@ -169,7 +168,7 @@ What I define as 'Arduino Methods' are ways to change the state of a pin that ar
 #### Line 50 - 53: Bitwise Operators
 
 {% highlight c++ %}
-PORTB |=  
+PORTB |=
 PORTB &=
 {% endhighlight %}
 This is one of the first methods that involve [Port Manipulation](https://www.arduino.cc/en/Reference/PortManipulation). In this case, PORTB is used, which refers to pins 8 to 13. So, PORTB can be considered an 6-bit number where each bit refers to the state of a pin.

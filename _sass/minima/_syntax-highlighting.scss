@@ -7,11 +7,11 @@
  }
 
 .highlight {
-  background: #252525;
+  // background: #252525;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #191919;
+    // background: #191919;
   }
 
   .c     { color: #998; font-style: italic } // Comment

@@ -5,9 +5,7 @@ date:   2018-08-29 10:32:00 +0100
 categories: blog
 tags: raspberry-pi
 ---
-***
-<br />
-<p><span class="firstcharacter">C</span>onnecting to eduroam within Raspbian took a lot more effort than I initially expected. Here are all the changes required, bundled into a script for those, like me, who have shaky hands and a poor track record with typos. For the University of Edinburgh I have found the following to work consistently. Of course, your mileage may vary.</p><br>
+<p><span class="firstcharacter">C</span>onnecting to eduroam within Raspbian took a lot more effort than I initially expected. Here are all the changes required, bundled into a script for those, like me, who have shaky hands and a poor track record with typos. For the University of Edinburgh I have found the following to work consistently. Of course, your mileage may vary.</p>
 
 ***
 
@@ -45,9 +43,9 @@ network={
 
 After that restart dhcpcd
 
-```bash
+{% highlight bash %}
 sudo systemctl restart dhcpcd
-```
+{% endhighlight %}
 
 If the wifi doesn't connect, then there are likely one of two reasons.
 
@@ -91,9 +89,9 @@ sudo systemctl restart dhcpcd
 
 If you connect your Raspberry Pi to your phone, you can also curl this script straight from GitHub with:
 
-```bash
+{% highlight bash %}
 bash <(curl -s https://raw.githubusercontent.com/mhamilt/shell-scripts/master/RaspberryPi/configure_eduroam.sh)
-```
+{% endhighlight %}
 
 **Note**
 
@@ -103,7 +101,7 @@ The script will overwrite the file: `/etc/wpa_supplicant/wpa_supplicant.conf`. M
 
 
 Thanks to elektronik-kompendium.de whose article was the one that finally explained how to do this. It is linked below, though you may need to polish up your German
-<br><br>
+
 
 ***
 <br />

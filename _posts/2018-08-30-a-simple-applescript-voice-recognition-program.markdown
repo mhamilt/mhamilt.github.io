@@ -5,9 +5,7 @@ date:   2018-08-30 13:18:00 +0100
 categories: blog
 tags: applescript
 ---
-***
-<br />
-<p><span class="firstcharacter">R</span>ecently, I wanted to write an application that would allow for checking off a list handsfree. When messing around creating some tools in applescript I stumbled across the Speech Recognition Server library. It is quite constrained in the number methods it has at its disposal, but it is a fun way to start creating some voice activate commands.</p><br>
+<p><span class="firstcharacter">R</span>ecently, I wanted to write an application that would allow for checking off a list handsfree. When messing around creating some tools in applescript I stumbled across the Speech Recognition Server library. It is quite constrained in the number methods it has at its disposal, but it is a fun way to start creating some voice activate commands.</p>
 
 ***
 ### Workflow
@@ -34,7 +32,7 @@ end tell
 {% endhighlight %}
 
 ***
-<br />
+
 ### Helpful References
 
 * [AppleScript for Python Programmers](http://aurelio.net/articles/applescript-vs-python.html)
