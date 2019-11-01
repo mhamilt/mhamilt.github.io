@@ -70,7 +70,6 @@ ul {
   padding-top: 5px;
   padding-right: 3px;
 }
-
 // .firstcharacter {
 //   color: $brand-color;
 //   float: left;
@@ -137,8 +136,8 @@ ul {
 }
 
 li {
-  > ol,
-  > ul {
+  > ul,
+  > ol {
     margin-bottom: 0;
   }
 
@@ -199,6 +198,12 @@ blockquote {
 /**
  * Code formatting
  */
+p {
+  > code {
+    overflow-wrap: break-word !important;
+  }
+}
+
 code,
 pre {
   @include relative-font-size(0.9);
@@ -217,6 +222,7 @@ pre {
   padding: 0;
   overflow-x: auto;
   padding-left: 5px;
+
   > code {
     border: 0;
     padding-right: 10;
@@ -270,7 +276,6 @@ pre {
  * Tables
  */
 table {
-
   width: 100%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
@@ -311,6 +316,7 @@ hr {
  * P5 sketches
  */
 // canvas { position:fixed; top:0; left:0; z-index:1; } #contenu { position:relative; z-index:2; }
+
 .sketch {
   // max-width: 100%;
   padding-right: 10px;
