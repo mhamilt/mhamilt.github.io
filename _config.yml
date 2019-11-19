@@ -33,11 +33,11 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: false
 
 minima:
   date_format: "%b %-d, %Y"
-  
+
 theme: minima
 #plugins:
 #  - jekyll-feed
