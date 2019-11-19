@@ -6,10 +6,9 @@ categories: blog
 tags: raspberry-pi bluetooth
 ---
 
+<span class="firstcharacter">I</span> like Serial Communications, TTL UART, whatever you like to call it. I like the simplicity of using simple serial communication to send data to environments like MaxMSP and Processing. For the life of me I could not find a setup guide for starting a Serial Port Profile from the Raspberry Pi that also covered using Max or Processing. So, look no further, here is a quick setup guide and associated script and troubleshooting to help you get going.
 
 ## Setup
-
-I like Serial Communications, TTL UART, whatever you like to call it. I like the simplicity of using simple serial communication to send data to environments like MaxMSP and Processing. For the life of me I could not find a setup guide for starting a Serial Port Profile from the Raspberry Pi that also covered using Max or Processing. So, look no further, here is a quick setup guide and associated script and troubleshooting to help you get going.
 
 ### Setup script
 
