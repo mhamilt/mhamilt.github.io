@@ -9,6 +9,8 @@ tags: raspberry-pi bluetooth
 
 ## Setup
 
+I like Serial Communications, TTL UART, whatever you like to call it. I like the simplicity of using simple serial communication to send data to environments like MaxMSP and Processing. For the life of me I could not find a setup guide for starting a Serial Port Profile from the Raspberry Pi that also covered using Max or Processing. So, look no further, here is a quick setup guide and associated script and troubleshooting to help you get going.
+
 ### Setup script
 
 Run the script below:
@@ -74,11 +76,13 @@ Begin listening for an incoming connection
 sudo rfcomm watch hci0
 ```
 
-After running `sudo rfcomm watch hci0 ` and your device has connected, using `screen` or maxMSP, Processing & c..., ther should now be a new serial port available for communication
+After running `sudo rfcomm watch hci0 ` and your device has connected, using `screen` or maxMSP, Processing & c..., there should now be a new serial port available for communication
 
 `/dev/rfcomm0`
 
-Open it up and start sending some serial data!
+In Max send a `print` message to the [serial object](https://docs.cycling74.com/max8/refpages/serial?q=serial). In Processing, import the [serial library](https://processing.org/reference/libraries/serial/index.html) and simply put `printArray(Serial.list())` in your `void setup()`
+
+Open it up that port and start sending some serial data!
 
 
 #### Bonus: bluetooth shell
