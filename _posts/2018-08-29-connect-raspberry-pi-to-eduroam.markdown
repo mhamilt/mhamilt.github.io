@@ -7,6 +7,14 @@ tags: raspberry-pi
 ---
 <p><span class="firstcharacter">C</span>onnecting to eduroam within Raspbian took a lot more effort than I initially expected. Here are all the changes required, bundled into a script for those, like me, who have shaky hands and a poor track record with typos. For the University of Edinburgh I have found the following to work consistently. Of course, your mileage may vary.</p>
 
+### tl;dr
+
+Run this script,
+
+{% highlight bash %}
+bash <(curl -s https://raw.githubusercontent.com/mhamilt/shell-scripts/master/RaspberryPi/configure_eduroam.sh)
+{% endhighlight %}
+
 ***
 
 ### Update
