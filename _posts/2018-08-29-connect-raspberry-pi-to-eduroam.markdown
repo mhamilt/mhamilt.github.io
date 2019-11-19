@@ -28,7 +28,7 @@ A previous version of this post suggested editing the `/etc/networks/interfaces`
 To configure a Raspberry pi to use eduroam, simply type the following into `/etc/wpa_supplicant/wpa_supplicant.conf`
 
 {% highlight bash %}
-sudo sh -c "printf 'ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 ap_scan=1
 update_config=1
 country=GB
