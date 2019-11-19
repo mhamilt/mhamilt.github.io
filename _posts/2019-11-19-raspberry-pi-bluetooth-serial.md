@@ -87,15 +87,16 @@ Open it up that port and start sending some serial data!
 #### Bonus: bluetooth shell
 
 **Pi**
+
 ```bash
 sudo rfcomm watch hci0 1 getty rfcomm0 115200 vt100 -a pi
 ```
 
-Open terminal on machine
+Open terminal on your machine and enter
 
-- use [`screen`]
-- use serial monitor in Arduino IDE
-
+```
+screen /dev/cu.BLUETOOTH_ID-SerialPort 115200
+```
 ***
 
 ## Troubleshooting
