@@ -86,13 +86,13 @@ Open it up that port and start sending some serial data!
 
 #### Bonus: bluetooth shell
 
-**Pi**
+In the terminal of your Raspberry Pi, enter
 
 ```bash
 sudo rfcomm watch hci0 1 getty rfcomm0 115200 vt100 -a pi
 ```
 
-Open terminal on your machine and enter
+Open the terminal on your own machine and enter
 
 ```
 screen /dev/cu.BLUETOOTH_ID-SerialPort 115200
