@@ -6,7 +6,7 @@ categories: blog
 tags: raspberry-pi bluetooth
 ---
 
-<span class="firstcharacter">A</span> comprehensive cheat sheet to using Vi (or Vim)
+<span class="firstcharacter">A</span> comprehensive cheat sheet to using Vi (or Vim).
 
 <br>
 
