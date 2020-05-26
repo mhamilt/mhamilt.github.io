@@ -8,6 +8,8 @@ tags: raspberry-pi bluetooth
 
 <span class="firstcharacter">A</span> comprehensive cheat sheet to using Vi (or Vim)
 
+<br>
+
 ## Cheatsheet
 
 remember to press escape (<kbd>␛</kbd> / <kbd>⎋</kbd>) before typing these commands
