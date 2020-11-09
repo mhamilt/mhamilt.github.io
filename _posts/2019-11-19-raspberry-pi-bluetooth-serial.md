@@ -133,7 +133,7 @@ sudo rfcomm watch hci0
 
 **Bluetooth not connected after pairing**
 
-After pairing with the Pi the bluetooth will drop out. This is normal and connection will only be live when there is when the serial port is opened.
+After pairing with the Pi the bluetooth will drop out. This is normal and the connection will only be live while the serial port is open.
 
 ![](/images/bluetooth-pair.png)
 
