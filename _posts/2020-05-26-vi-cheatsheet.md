@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Vi Cheatsheet"
-date:   2019-11-19 10:00:00 +0100
+date:   2020-05-26 10:00:00 +0100
 categories: blog
-tags: raspberry-pi bluetooth
+tags: vi cheatsheet
 ---
 
 <span class="firstcharacter">A</span> comprehensive cheat sheet to using Vi (or Vim).
