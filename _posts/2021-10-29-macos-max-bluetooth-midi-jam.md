@@ -63,4 +63,4 @@ Presented here are the steps required to get you and your collaborator setup. In
 
 ***
 
-Now you can send MIDI messages wirelessly on the fly without the infrastructure required for [OSC](http://cnmat.org/OpenSoundControl/).
+Now you can send MIDI messages wirelessly on the fly without the infrastructure required for [OSC](http://cnmat.org/OpenSoundControl/). You will be limited to a only a short range, so it is best to have line of sight with the other device.
