@@ -6,7 +6,7 @@ categories: blog
 tags: macos max ble midi
 ---
 
-<span class="firstcharacter">O</span>ne criminally under documented feature of macOS is the ability to advertise as Bluetooth MIDI device. When combined with some like [Max MSP](https://cycling74.com) this is a great way to jam with your friend's patches without trailing wires. It also opens up some fun possibilities for installations and sound art.
+<span class="firstcharacter">O</span>ne criminally under-documented feature of macOS is the ability to advertise as Bluetooth MIDI device. When combined with some like [Max MSP](https://cycling74.com) this is a great way to jam with your friend's patches without trailing wires. It also opens up some fun possibilities for installations and sound art.
 
 
 Presented here are the steps required to get you and your collaborator setup. In this instance I am using a 2011 Mac Mini on High Sierra `BigglesServer` and a 2012 Macbook Pro Retina 15" `ProfTiggles` on Mojave. The interface changes a little for both devices, but I will call out the differences at each step.
