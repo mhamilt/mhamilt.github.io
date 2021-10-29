@@ -22,8 +22,7 @@ Presented here are the steps required to get you and your collaborator setup. In
   - Click the Bluetooth icon in the menu bar
 
 
-  ![Audio MIDI Setup Bluetooth icon in the menu bar]({{ "/images/macos-ble-
-  midi/bluetooth-icon-menu-bar.png" | absolute_url }})
+  ![Audio MIDI Setup Bluetooth icon in the menu bar]({{ "/images/macos-ble-midi/bluetooth-icon-menu-bar.png" | absolute_url }})
 
 
   - Click the disclosure arrows and select `Configure Devices` -> `Open Bluetooth Configuration`
