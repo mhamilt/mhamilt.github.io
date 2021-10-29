@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "macOS / Max MSP Bluetooth MIDI Jam"
+title: "macOS Max MSP Bluetooth MIDI Jam"
 date: 2021-10-29 10:00:00 +0000
 categories: blog
 tags: macos max ble midi
