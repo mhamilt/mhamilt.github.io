@@ -5,6 +5,6 @@ permalink: /about/
 ---
 
 <img class="self-portrait" src="/images/me.jpg">
-I am a second rate musician and someone who programs in C++, python and Java (if under duress). I am currently employed as the Digital Development Technician for the Edinburgh College of Art. My role is to help staff and students with programming projects, a little electronics and generally getting their heads round how to do things.
+I am a ~second~ third rate musician and someone who enjoys programming in any language. I am currently undertaking a PhD and as result updates are sparse. I worked at Edinburgh College of Art where I caught the bug for trying to help artists be dangerous programming projects, not dangerous with electronics and generally how to have and be silly with computers.
 
-Anyone can program and all programming is just workflow. I hope to demonstrate that in this blog.
+Anyone can program and has the right to learn programming and in the end it is mainly just workflow. I hope to demonstrate that in this blog.
