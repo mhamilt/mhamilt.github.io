@@ -15,5 +15,6 @@ tags: vi cheatsheet
 remember to press escape (<kbd>␛</kbd> / <kbd>⎋</kbd>) before typing these commands
 
 | command | action  |
-| ------- | ------- |
+| :-------: | :-------: |
 | `:q!`   | Exit Vi |
+|  `ZZ`   | Save changes, if any, and exit |
