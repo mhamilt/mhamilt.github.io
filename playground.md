@@ -3,6 +3,7 @@ layout: page
 title: Playground
 permalink: /playground/
 ---
+
 <script language="javascript" type="text/javascript" src="/js/p5.min.js"></script>
 <script language="javascript" type="text/javascript" src="/js/sketch.js"></script>
 <script language="javascript" type="text/javascript" src="/js/BBCClock.js"></script>
@@ -15,7 +16,7 @@ permalink: /playground/
 
 <div class="sketch" id="sketch1" > </div>
 <div class="sketch" id="sketch2" > </div>
-<iframe src="https://editor.p5js.org/mhamilt/full/0aaff04_T"></iframe>
+<iframe width="600" height="400" src="https://editor.p5js.org/mhamilt/full/0aaff04_T"></iframe>
 
 ### WebGL in P5
 
