@@ -4,7 +4,8 @@
 
 //==============================================================================
 // Globals
-var docwidth = 2*$(window).width()/3;
+// var docwidth = 2*$(window).width()/3;
+let docwidth = 0.66*window.innerWidth
 //==============================================================================
 // Draw a square
 var s = function (p)
