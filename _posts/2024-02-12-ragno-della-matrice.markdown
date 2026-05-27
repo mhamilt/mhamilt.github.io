@@ -5,7 +5,7 @@ date:   2024-02-12 13:36:18 +0100
 categories: blog
 tags: italian
 ---
-<span class="firstcharacter">A</span>ttenta del ragno nelle tue matrici altrimenti si moltiplichi.
+<span class="firstcharacter">A</span>ttenta dei ragni nelle tue matrici altrimenti si moltiplicano.
 
 
 $$
