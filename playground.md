@@ -9,6 +9,31 @@ permalink: /playground/
 <script language="javascript" type="text/javascript" src="/js/BBCClock.js"></script>
 
 ### Meantone vs. Equal Temperament
+
+<style>
+    #temperament-table table {
+        border-collapse: collapse;
+        margin: 20px;
+    }
+
+    #temperament-table  td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ccc;
+        text-align: center;
+        transition: background 0.15s;
+    }
+
+    /* Highlighted cells */
+    .active {
+        background: #ffe0b2;
+    }
+
+    /* Hovered cell */
+    .current {
+        background: #ffb74d;
+    }
+</style>
  <table id="temperament-table">
             <tbody>
                 <tr>
