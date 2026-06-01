@@ -63,7 +63,7 @@ permalink: /playground/
             pointer-events: none;
     }
 </style>
-{% include audio_warning.html %}
+{% include audiowarning.html %}
  <table id="temperament-table">
             <tbody>
                 <tr>
