@@ -39,6 +39,7 @@ class BBCClock
 
     drawClockFace(p)
     {
+        p.rectMode(p.CENTER);
         p.background(this.backgroundColour);
         p.stroke(this.fillColour);
         p.fill(this.fillColour);
@@ -54,8 +55,11 @@ class BBCClock
             let ypos = (this.clockRadius + this.hourHeight / 2) * p.cos(tickAngle);
             p.translate(xpos, ypos);
             p.rotate(-tickAngle);
-            p.rect(tickxpos, tickypos, hourWidth, this.hourHeight);
-            p.rect(hourBarSpacing + tickxpos, tickypos, hourWidth, this.hourHeight);
+            let gap = this.endHourWidth / 3;
+            p.rect(-hourWidth/2 - gap/2, 0, hourWidth, this.hourHeight);
+            p.rect(+hourWidth/2 + gap/2, 0, hourWidth, this.hourHeight);
+            // p.rect(tickxpos, tickypos, hourWidth, this.hourHeight);
+            // p.rect(hourBarSpacing + tickxpos, tickypos, hourWidth, this.hourHeight);
             p.pop();
         }
     }
@@ -68,6 +72,7 @@ class BBCClock
         //----------------------------------------------------------------------------
         this.drawClockFace(p);
         //----------------------------------------------------------------------------
+        p.rectMode(p.CORNER);
         var s = p.second();
         var m = p.minute();
         var h = p.hour() % 12;

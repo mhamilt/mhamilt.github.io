@@ -145,25 +145,3 @@ var u = function (p)
     };
 };
 var myp5 = new p5(u, 'sketch4');
-
-
-var u2 = function (p)
-{
-  var bbcClock;
-    p.setup = function ()
-    {
-        p.createCanvas(p.windowWidth, p.windowHeight);
-        bbcClock = new BBCClock(p, p.width, p.height);
-    };
-
-    p.draw = function ()
-    {
-        bbcClock.display(p);
-    };
-    p.windowResized = function()
-    {
-        p.resizeCanvas(p.windowWidth, p.windowHeight);
-        bbcClock = new BBCClock(p, p.width, p.height);
-    }
-};
-var myp5 = new p5(u2, 'sketch5');
