@@ -64,7 +64,20 @@ permalink: /playground/
     }
 </style>
 <div id="iOSAudioWarning" style="display:none;" class="audio-warning">For Sound Switch Ringer On, then Refresh</div>
+<script>
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
+if (isIOS) {
+const el = document.getElementById('iOSAudioWarning');
+el.style.display = 'block';
+
+if (el && el.style.display !== 'none') {
+setTimeout(() => {
+el.classList.add('hidden');
+}, 10000);
+}
+}
+</script>
  <table id="temperament-table">
             <tbody>
                 <tr>
