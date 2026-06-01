@@ -33,7 +33,38 @@ permalink: /playground/
     .current {
         background: #ffb74d;
     }
+
+    .audio-warning {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+
+        max-width: 280px;
+        padding: 12px 16px;
+
+        color: #888;
+        font-size: 14px;
+        line-height: 1.4;
+
+        border: 3px solid rgba(100, 100, 100, 0.15);
+        border-radius: 14px;
+
+        z-index: 9999;
+
+        pointer-events: none;
+
+        transition: opacity 0.35s ease, transform 0.35s ease;
+
+    }
+
+    .audio-warning.hidden {
+        opacity: 0;
+        transform: translateY(10px);
+            pointer-events: none;
+    }
 </style>
+<div id="iOSAudioWarning" style="display:none;" class="audio-warning">For Sound Switch Ringer On, then Refresh</div>
+
  <table id="temperament-table">
             <tbody>
                 <tr>
