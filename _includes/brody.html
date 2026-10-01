@@ -1,0 +1,108 @@
+<style>
+    #p5-overlay {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100vw;
+        height: 100px;
+        z-index: 9999;
+
+        /* optional */
+        pointer-events: none;
+    }
+</style>
+<div id="p5-overlay"></div>
+<script defer>
+
+
+    let brody = function (p) {
+        let canvas;
+        let img;
+
+        let cycle = 0;
+        let state = 0;
+        let stateChange = false;
+        const multipliers = [0, -1, 0, 1];
+        let rotMult = 0;
+        let rotMultTarget = 0
+        const numStates = 4;
+        const period = 20;
+        let rot = 3.141265363 / 20
+        const rotDelta = 1 / (period / 5);
+        let dispY;
+        let xpos = 0
+
+        p.preload = function () {
+            img = p.loadImage('images/brody-s.png');
+        };
+        p.setup = () => {
+            const container = document.getElementById('p5-overlay');
+
+            canvas = p.createCanvas(
+                window.innerWidth,
+                // container.clientWidth,
+                container.clientHeight
+            );
+            canvas.parent(container);
+
+            img.resize(0, p.height)
+            dispY = p.height * 0.08;
+            p.rectMode(p.CENTER)
+            p.imageMode(p.CENTER)
+        };
+
+        p.draw = () => {
+            p.clear();
+
+            p.push();
+            // p.translate(p.width / 2, p.height / 2 + p.abs(dispY * rotMult));
+            p.translate(-img.width + xpos, p.height / 2 + p.abs(dispY * rotMult));
+            // p.scale(-1,1);
+            p.rotate(rot * rotMult)
+
+            p.image(img, 0, 0);
+            p.pop();
+
+            cycle++
+            if (cycle >= period) {
+                cycle -= period;
+                state++;
+                stateChange = true
+                if (state >= numStates)
+                    state -= numStates;
+
+                rotMultTarget = multipliers[state];
+                // console.log(rotMult)
+            }
+
+            if (stateChange) {
+                let direction = ((rotMultTarget < rotMult) ? -1 : 1)
+                rotMult += direction * rotDelta
+
+                if (((direction == -1) ?
+                    rotMult <= rotMultTarget
+                    :
+                    rotMult >= rotMultTarget)) {
+                    stateChange = false;
+                }
+
+            }
+            xpos+=3
+            if (xpos > (p.width + (2*img.width)))
+                xpos = 0;
+        };
+
+        p.windowResized = () => {
+            const container = document.getElementById('p5-overlay');
+
+            p.resizeCanvas(
+                container.clientWidth,
+                container.clientHeight
+            );
+        };
+    };
+
+    new p5(brody, 'p5-overlay');
+
+
+</script>
